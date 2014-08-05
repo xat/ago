@@ -1,7 +1,7 @@
 var expect = require('expect.js');
-var timetpl = require('./timetpl');
+var ago = require('./ago');
 
-var tpls = timetpl([
+var tpls = ago([
   { tpl: 'a few seconds ago', handler: function (diff, isPast, to) { return isPast && (to('seconds') < 45) } },
   { tpl: 'a minute ago', handler: function (diff, isPast, to) { return isPast && (to('minutes') === 1) } },
   { tpl: '%num minutes ago', handler: function (diff, isPast, to) { return isPast && (to('minutes') < 45) && { num: to('minutes') } } },

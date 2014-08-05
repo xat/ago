@@ -26,7 +26,7 @@
     return tpl;
   };
 
-  var timetpl = function(cfg) {
+  var ago = function(cfg) {
     cfg || (cfg = []);
     var len = cfg.length;
 
@@ -50,11 +50,11 @@
 
   // Node.js / browserify
   if (typeof module !== 'undefined' && module.exports) {
-    module.exports = timetpl;
+    module.exports = ago;
   }
   // <script>
   else {
-    glob.timetpl = timetpl;
+    glob.ago = ago;
   }
 
 }(this);

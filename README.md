@@ -1,4 +1,4 @@
-# timetpl
+# ago.js
 
 Create time templates.
 
@@ -6,9 +6,9 @@ Create time templates.
 
 ```javascript
 
-var compiler = timetpl([
-  { tpl: '%secs seconds ago', handler: function (diff, past, helper) { if (!past) return; return { secs: helper('seconds')} } },
-  { tpl: 'in %secs seconds', handler: function (diff, past, helper) { if (past) return; return { secs: helper('seconds')} } }
+var compiler = ago([
+  { tpl: '%secs seconds ago', handler: function (diff, past, to) { if (!past) return; return { secs: to('seconds')} } },
+  { tpl: 'in %secs seconds', handler: function (diff, past, to) { if (past) return; return { secs: to('seconds')} } }
 ]);
 
 var past = Date.now() - 3000;
