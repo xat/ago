@@ -1,0 +1,26 @@
+{
+  "name": "timetpl",
+  "version": "0.0.1",
+  "description": "create time templates",
+  "main": "timetpl.js",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^1.21.3"
+  },
+  "scripts": {
+    "test": "mocha tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xat/timetpl.git"
+  },
+  "keywords": [
+    "time"
+  ],
+  "author": "Simon Kusterer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xat/timetpl/issues"
+  },
+  "homepage": "https://github.com/xat/timetpl"
+}
