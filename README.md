@@ -20,6 +20,11 @@ compiler(future); // outputs: "in 3 seconds"
 
 ```
 
+## Install
+
+
+```bower install ago```
+
 
 ## License
 Copyright (c) 2014 Simon Kusterer

@@ -1,6 +1,6 @@
 {
   "name": "ago.js",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "create time templates",
   "main": "timetpl.js",
   "devDependencies": {
