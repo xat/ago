@@ -9,4 +9,18 @@ gulp.task('minimize', function() {
         .pipe(gulp.dest(''));
 });
 
-gulp.task('default', ['minimize']);
+gulp.task('minimize_en', function() {
+  return gulp.src('en.js')
+    .pipe(uglify())
+    .pipe(concat('en.min.js'))
+    .pipe(gulp.dest(''));
+});
+
+gulp.task('minimize_de', function() {
+  return gulp.src('de.js')
+    .pipe(uglify())
+    .pipe(concat('de.min.js'))
+    .pipe(gulp.dest(''));
+});
+
+gulp.task('default', ['minimize', 'minimize_en', 'minimize_de']);

@@ -1,6 +1,6 @@
 # ago.js
 
-Create time templates.
+ago.js lets you create time based templates.
 
 ## Usage
 
@@ -17,7 +17,9 @@ var future = Date.now() + 3000;
 compiler(past); // outputs: "3 seconds ago"
 compiler(future); // outputs: "in 3 seconds"
 
+
 ```
+
 
 ## License
 Copyright (c) 2014 Simon Kusterer
