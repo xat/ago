@@ -1,0 +1,27 @@
+{
+  "name": "ago.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/xat/ago",
+  "authors": [
+    "Simon Kusterer <simon@soped.com>"
+  ],
+  "description": "create time based templates",
+  "main": "ago.js",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "timeago",
+    "time",
+    "moment"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
