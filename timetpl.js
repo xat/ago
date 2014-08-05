@@ -5,7 +5,9 @@
     minutes: 60000,
     hours: 3600000,
     days: 86400000,
-    weeks: 604800000
+    weeks: 604800000,
+    months: 2592000000,
+    years: 31536000000
   };
 
   var timeify = function(ms) {
@@ -32,11 +34,11 @@
       now || (now = Date.now());
       var past = now > then;
       var diff = Math.abs(now - then);
-      var helper = timeify(diff);
+      var to = timeify(diff);
       var res;
 
       for (var i=0; i<len; i++) {
-        res = cfg[i].handler(diff, past, helper, then, now);
+        res = cfg[i].handler(diff, past, to, then, now);
         if (res) {
           return compile(cfg[i].tpl, res);
         }
