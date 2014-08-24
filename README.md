@@ -20,10 +20,19 @@ compiler(future); // outputs: "in 3 seconds"
 
 ```
 
+
 ## Install
 
 
-```bower install ago```
+`bower install ago`
+
+
+## Contribute
+
+
+* Setup: `npm install`
+* Build: `gulp`
+* Test: `npm test`
 
 
 ## License
